@@ -15,3 +15,5 @@
 6.  TypeScript에서 Node.js 모듈을 쓸 수 있는 환경 구축 : `npm i @types/node` <br />
 
 7.  React Toast Popup 모듈 설치 : `npm install react-simple-toasts` <br />
+
+source: https://github.com/daffy3/YT-Next
