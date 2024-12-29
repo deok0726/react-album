@@ -22,10 +22,14 @@ function index() {
     <div className={styles.page}>
       {/* 공통 헤더 UI 부분 */}
       <CommonHeader />
-      <main className={styles.page__contents}> {
-        data.map((item: CardDTO) => {
-          return <Card prop={item}/>
-        })}
+      <main className={styles.page__contents}> 
+        {/* 데이터가 없는 경우 */}
+        {data.length == 0 ? (
+          <div className={styles.page__contents__noData}>조회 가능한 데이터가 없습니다.</div>
+        ) : data.map((item: CardDTO) => {
+            return <Card prop={item}/>
+          })
+        }
       </main>
     </div>
   )
